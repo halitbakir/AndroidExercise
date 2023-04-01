@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/islemci"
+    android:orientation="vertical"
+    tools:context=".ApplicationData1">
+
+    <!-- kullanıcıdan veri alınır -->
+    <EditText
+        android:id="@+id/EditTextApplicationId"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonSubmitId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Gönder"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/buttonResetId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/İmageViewId"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/computer" />
+
+    <TextView
+        android:id="@+id/textViewApplicationId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

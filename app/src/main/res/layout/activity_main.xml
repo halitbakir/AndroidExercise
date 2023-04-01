@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--kodlar buraya-->
+            <Button
+                android:id="@+id/buttonOtherActivity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Other Activity" />
+
+            <Button
+                android:id="@+id/buttonApplicationData1Id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Text Tutorials"
+                android:backgroundTint="#E89111"/>
+            <!-- applicationdataya yönlendiricek -->
+
+            <Button
+                android:id="@+id/buttonActivityBlueId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Connection Activity Blue"
+                android:backgroundTint="@color/red"/>
+
+            <Button
+                android:id="@+id/buttonActivityImageId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Pictures Tutorials"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"/>
+
+            <!--  FAB: FloatingActionButton -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- progress bar -->
+            <ProgressBar
+                android:id="@+id/progressBarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/RadioButtonFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:checked="true"
+                    android:text="Bayan" />
+
+                <RadioButton
+                    android:id="@+id/RadioButtonMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Erkek"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonRadioSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Gönder"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/white"/>
+
+            <!-- List View-->
+            <Button
+                android:id="@+id/buttonActivityListViewId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ListView"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"/>
+
+            <!--ReCyclerView-->
+            <Button
+                android:id="@+id/buttonActivityReCyclerViewId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="ReCyclerView"
+                android:backgroundTint="#D45353"
+                android:textColor="@color/black"/>
+
+            <!--MenuItem-->
+            <Button
+                android:id="@+id/buttonMenuButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Menu Item"
+                android:backgroundTint="#00BCD4"
+                android:textColor="@color/black"/>
+
+           <!-- Firebasetutorials -->
+            <Button
+                android:id="@+id/buttonActivityFirebasetutorialsId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Firebase Tutorials"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"/>
+
+            <!-- Firebase Local Storage-->
+            <Button
+                android:id="@+id/buttonActivityFirebaseLocalStorageId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="LocalStorage"
+                android:backgroundTint="#530101"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+     </ScrollView>
+ </RelativeLayout>

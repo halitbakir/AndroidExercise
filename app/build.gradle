@@ -1,0 +1,78 @@
+plugins {
+    id 'com.android.application'
+    /*firebase*/
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.halitbakir.androidd'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.halitbakir.androidd"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+
+
+    /*firebase uygulamasında Firebase assistan -- email passoword*/
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+
+    /*firebase realtime database: kodlar*/
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+
+    /*firebase stroage: resim*/
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+
+    /*Firebase*/
+    implementation platform('com.google.firebase:firebase-bom:31.2.3')
+    implementation 'com.google.firebase:firebase-analytics'
+
+    /*google signin intergation android*/
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+
+    /*picasso*/
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    /*material design*/
+    implementation 'com.google.android.material:material:1.8.0'
+
+
+    /* İmage View circleimageview */
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    /*glide: internetteki resimleri almak*/
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+
+    /*lombok*/
+    compileOnly 'org.projectlombok:lombok:1.16.22'
+    annotationProcessor 'org.projectlombok:lombok:1.16.22'
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "348010960415",
+    "project_id": "messagesapp-88939",
+    "storage_bucket": "messagesapp-88939.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348010960415:android:64b1f0d6f3b88c6657272a",
+        "android_client_info": {
+          "package_name": "com.halitbakir.androidd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348010960415-oqjmrmpm1tiv92fcnt9gk37vul2dp9sk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.halitbakir.androidd",
+            "certificate_hash": "345ef7c174ee55d9e479746ab53b37cde2aff1f1"
+          }
+        },
+        {
+          "client_id": "348010960415-b55o6dn604olb34i1pu1a0a37mp728m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ20XUtfO8OlejcFugF0k39n-4x-Y0g14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348010960415-b55o6dn604olb34i1pu1a0a37mp728m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
